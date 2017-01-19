@@ -61,19 +61,24 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a>
+						<li><a href="#about" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">About</a></li>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#gallery">Gallery</a>
+                        <a class="page-scroll" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse.in">Gallery</a>
+						<li><a href="#gallery" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Gallery</a></li>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#menu-list">Menu</a>
+                        <a class="page-scroll" href="#menu-list" data-toggle="collapse" data-target=".navbar-collapse.in">Menu</a>
+						<li><a href="#menu-list" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Menu</a></li>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#location">Location</a>
+                        <a class="page-scroll" href="#location" data-toggle="collapse" data-target=".navbar-collapse.in">Location</a>
+						<li><a href="#location" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Location</a></li>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#opening-hours">Opening Hours</a>
+                        <a class="page-scroll" href="#opening-hours" data-toggle="collapse" data-target=".navbar-collapse.in">Opening Hours</a>
+						<li><a href="#opening-hours" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Opening Hours</a></li>
                     </li>
 				</li>
                 </ul>
@@ -427,11 +432,6 @@
     $('.collapse').collapse('hide');
 })
     </script> 
-	<script>
-      $('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('toggle');
-      });
-    </script>
 	
 	<script>
     $(document).ready(function() {
