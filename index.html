@@ -1,225 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Casa Y Pasta | Pasta Atbp.</title>
-	<meta charset="utf-8">
-	<meta name="author" content="pixelhint.com">
-	<meta name="description" content="Resto HTML5/CSS3 Restaurant Home Page website Template"/>
 
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/carouFredSel.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
+    <title>Casa y Pasta - Pasta Atbp.</title>
 
-	<!--  start header  -->
-	<header>
-		<div class="wrapper">
-			<div class="logo">
-				<a href=""><img src="img/logo.png" alt="Resto" title=""/></a>
-			</div>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-			<nav>
-				<ul>
-					<!--<li><a href="" class="active">Home</a></li>-->
-					<li><a href="#">About</a></li>
-					<li><a href="menu.html">Menu</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header><!--  end header  -->
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-
-	<!--  start hero  -->
-	<section class="hero">
-		<div class="caption">
-			<h3>Welcome to Casa y Pasta</h3>
-			<h4>
-				<span class="rsep"></span>
-				Pasta ni Maria atbp.
-				<span class="lsep"></span>
-			</h4>
-			
-		</div>
-	</section><!--  end hero  -->
-		
-		<section class="featured_dishes">
-			<div class="wrapper">
-				<section class="info">
-					<div class="title">
-						<h3>About</h3>
-						<span class="separator"></span>
-					</div>
-					<br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum elit sapien, at viverra massa viverra vitae. Praesent at luctus metus, vitae porttitor urna. Integer ut ante ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non scelerisque sapien, in scelerisque magna. Quisque luctus massa sapien, ac rutrum massa tempor a. Vivamus non efficitur lectus.</p></br>
-					<br><p>In ornare massa nulla, eget interdum lorem commodo et. Curabitur tincidunt placerat tellus, ac ullamcorper mi. Aenean scelerisque purus quis tempus condimentum. Pellentesque suscipit lobortis urna, eu molestie urna molestie et. Aliquam vehicula faucibus volutpat. Aenean ultrices diam ac euismod lacinia. Aliquam in pretium lacus. Etiam pharetra gravida purus, a mattis nibh sollicitudin a. Donec quis dolor vel dui placerat mollis. Pellentesque in molestie nibh. Donec condimentum leo sit amet velit scelerisque, vehicula fermentum quam scelerisque. Fusce bibendum scelerisque bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></br>
-				</section>
-			</div>
-		</section>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 	
-	<!--  start featured dishes  -->
-	<section class="featured_dishes">
-		<div class="wrapper">
-			<section class="info">
-				<div class="title">
-					<h3>Featured Dishes</h3>
-					<span class="separator"></span>
-				</div>
-				<div class="slider_nav" id="slider_nav">
-				</div>
-			</section>
+	<!-- Casa Plugin -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-			<section class="dishes" id="dishes">
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish1.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Aglio Oli</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱100</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li class="no-star"></li
-					</ul>
-				</article>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish2.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Puttanesca</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱110</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li class="no-star"></li>
-						<li class="no-star"></li>
-					</ul>
-				</article>
+</head>
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish3.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Pasta ala Gambas</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱100</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</article>
+<body id="page-top">
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish4.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Longanisa Pasta</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱100</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li class="no-star"></li>
-					</ul>
-				</article>
-				
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+				<a class="navbar-brand page-scroll" href="#page-top">
+				<img alt="Brand" src="img/logo.png">
+				</a>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+            </div>
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish3.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Pasta ala Gambas</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱100</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</article>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#menu-list">Menu</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#location">Location</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#opening-hours">Opening Hours</a>
+                    </li>
+				</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-				<article>
-					<div class="dishe_img">
-						<a href="#"><img src="img/dish2.jpg" alt="" title=""/></a>					
-					</div>
-					<div class="dish_info">
-						<a href="#"><h2>Puttanesca</h2></a>
-					</div>
-					<ul class="rating">
-						<h5>₱110</h5>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li class="no-star"></li>
-						<li class="no-star"></li>
-					</ul>
-				</article>
+    <header>
+    <!--header-->
+    <section id="header">
+        <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name">Casa y Pasta</h1>
+            <h2>Visit us at Borderline Food Park!</h2>
+            <p>Pasta | Pulutan | Atbp.</p>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- / header -->
+    </header>
+
+    <!--about-->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center marb-35">
+                    <h1 class="header-h">Casa y Pasta</h1>
+                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                            <h2 class="heading">Reasons to visit us:</h2>
+                            <p>We always provide the best quality of pasta and other food.</p>
+                            <div class="details-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Customers deserve the best quality of pasta</li>
+                                    <li><i class="fa fa-check"></i>Affordable prices</li>
+                                    <li><i class="fa fa-check"></i>Satifaction is a must</li>
+                                    <li><i class="fa fa-check"></i>Always fresh and ready to serve</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img src="img/pasta01.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+    <!--/about-->
+	
+	<!-- gallery -->
+    <section id="gallery">
+           	<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/aglio.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/spaghetti.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/carbonara.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/res03.jpg" /></div>
+    	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/gambas.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/pesto.jpg" /></div>
+	    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/puttanesca.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="img/alfredo.jpg" /></div>
+    </div>
+	</div>
+    </section>
+    <!--/ gallery -->
+	
+    <!-- menu -->
+    <section id="menu-list" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center marb-35">
+                    <h1 class="header-h">Menu List</h1>
+                    <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+                </div>
+                <div class="col-md-12  text-center gallery-trigger">
+                    <ul>
+                        <li><a class="filter" data-filter="all">Main Menu</a></li>
+                        <li><a class="filter" data-filter=".category-1">Pasta ni Maria</a></li>
+                        <li><a class="filter" data-filter=".category-2">Pasta ni Bebeh</a></li>
+                        <li><a class="filter" data-filter=".category-3">Pulutan ng Ina Mo</a></li>
+						<li><a class="filter" data-filter=".category-4">Atbp.</a></li>
+                    </ul>
+                </div>
+                <div id="Container">
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="img/aglio.jpg">Pasta ni Maria</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="img/aglio.jpg">Pasta ni Maria</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Maria</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Maria</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Bebeh</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Bebeh</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Bebeh</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pasta ni Bebeh</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pulutan ng Ina Mo</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pulutan ng Ina Mo</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pulutan ng Ina Mo</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Pulutan ng Ina Mo</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+					<div class="mix category-4 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Atbp.</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-4 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Atbp.</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-4 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Atbp.</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>
+                    <div class="mix category-4 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#gallery" data-meal-img="assets/img/restaurant/rib.jpg">Atbp.</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">₱100</span>
+                      </span>
+                      <span class="menu-subtitle">Ingredients to follow</span>
+                    </div>					
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ menu -->
+
+    <!-- location -->
+    <section id="location">
+        <div class="bg-color" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center" style="padding:60px;">
+                      <h1 class="header-h">Visit us!</h1>
+                      <p class="header-p">We are open to serve you</p>
+                    </div>
+                    <div class="col-md-12" style="padding-bottom:60px;">
+                        <div class="item active left">
+                          <div class="col-md-6 col-sm-6 left-images">
+                           <img src="img/res02.jpg" class="img-responsive">
+                         </div>
+                         <div class="col-md-6 col-sm-6 details-text">
+                          <div class="content-holder">
+                            <h2>We are located at:</h2>
+                            <p>111 P. Sanchez St. brgy. Bagumbayan, Sta. Mesa, Manila</p>
+							<p>Borderline Food Park</p>
+                            <address>
+                              <strong>See You! </strong>
+                            </address>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ location -->
+
+    <!-- opening-hours -->
+    <section id="opening-hours" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="header-h">Opening Hours</h1>
+                    <p class="header-p">We are open!
+                    <br>checkout our store hours and contact numbers:</p>
+                            <p class="light-blue regular alt-p"> Monday to Friday 8:00pm-2:00am</p>
+                            <p class="light-blue regular alt-p">
+                                 Friday and Sunday 08:00pm - 4:00am
+                            </p>
+					
+					<h1 class="header-h">Call us!</h1>
+                            <p class="light-blue regular alt-p">+63 915 149 casa - <span class="opening-hourss-sp">Mobile</span></p>
+							<p class="light-blue regular alt-p">02 515 casa - <span class="opening-hourss-sp">Telephone</span></p>
+					<br></br>
+						<!-- social links -->
+							<a href="http://facebook.com/casaypasta" class="btn btn-social-icon btn-facebook">
+							<span class="fa fa-facebook"></span>
+							</a>
+							<a href="http://twitter.com/casaypasta" class="btn btn-social-icon btn-twitter">
+							<span class="fa fa-twitter"></span>
+							</a>
+							<a href="http://instagram.com/casaypasta" class="btn btn-social-icon btn-instagram">
+							<span class="fa fa-instagram"></span>
+							</a>
+						<!-- / social links -->
+                </div>
+            </div>
+       
+        </div>
+    </section>
+    <!-- / opening-hours -->
+	
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Casa y Pasta. Pasta Atbp.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+	
+	<!-- Lightbox -->
+	<div class="container">
 
 
-			</section>
-		</div>
-	</section><!--  end featured_dishes  -->
+		<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-content">
+					<div class="modal-body">
+               <h2>Casa y Pasta - Pasta Atbp.</h2>
+               <img src="img/lightbox.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+						</div>
+    </div>
 
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-	<!--  start footer  -->
-	<footer>
-		<div class="wrapper">
-			<!-- adresse1  -->
-			<section class="adress">
-				<p>Borderline Food Park</p> 
-				<p class="location">123 Sta Mesa<br/>
-				Manila, Philippines</p>
-			</section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-			<!--  adress2  -->
-			<section class="adress">
-				<p>Contact Us</p>
-				<p class="phone">+63 915 149 casa<br/>
-				<p class="phone">516 54 55</p>
-			</section>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-			<!--  footer navigation  -->
-			<section class="footer_nav">
-				<nav>
-					<ul>
-						<li><a href="">About</a></li>
-						<li><a href="">Menu</a></li>
-						<li><a href="">Gallery</a></li>
-					</ul>
-				</nav>
-			</section>
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="opening-hoursform/opening-hoursform.js"></script>
+	
+	<script>
+    $(document).ready(function() {
+    var $lightbox = $('#lightbox');
+    
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+    
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+    
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+            
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+  $('#lightbox').modal();
+});
 
-			<!--  footer copyrights  -->
-			<section class="copyrights">
-				<img src="img/footer_logo.png" class="footer_logo" alt="" title="">
-				<p>© 2017 Casa y Pasta</p><p> All Rights Reserved.</p>	
-			</section>
-		</div>
-	</footer><!--  end footer  -->
-    <script src='../ga.js'></script>
+</script>
+<style>
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+</style>
 
 </body>
+
 </html>
